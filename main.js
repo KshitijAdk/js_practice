@@ -23,6 +23,9 @@ const api = {
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
   
+    let newDate = new Date();
+    newDate.innerHTML = document.querySelector('.location .date');
+
     let now = new Date();
     let date = document.querySelector('.location .date');
     date.innerText = dateBuilder(now);
